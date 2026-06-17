@@ -1,6 +1,6 @@
-export default function Logo({ className = '', light = false }: { className?: string; light?: boolean }) {
-  const blue = light ? '#7FB1E6' : '#0B5CAB';
-  const red = '#E51E25';
+export default function Logo({ className = '' }: { className?: string }) {
+  const blue = '#4F93FF';
+  const red = '#FF4D57';
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
@@ -16,8 +16,8 @@ export default function Logo({ className = '', light = false }: { className?: st
         <path d="M40 64 Q50 54 60 64" fill="none" stroke={blue} strokeWidth="4" />
       </svg>
       <span className="leading-none">
-        <span className={`block font-bold text-[0.95rem] ${light ? 'text-white' : 'text-ink-900'}`}>{'ANALEC'}</span>
-        <span className={`block text-[0.62rem] tracking-[0.18em] font-medium ${light ? 'text-primary-300' : 'text-primary-600'}`}>INSIGHTS CRM</span>
+        <span className="block font-bold text-[0.95rem] text-white tracking-wide">ANALEC</span>
+        <span className="block text-[0.6rem] tracking-[0.22em] font-medium text-brand-300">INSIGHTS CRM</span>
       </span>
     </span>
   );
