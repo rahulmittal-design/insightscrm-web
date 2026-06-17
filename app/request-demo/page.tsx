@@ -7,15 +7,15 @@ export const metadata: Metadata = { title: 'Request a Demo', description: 'See I
 
 export default function RequestDemoPage() {
   return (
-    <Section muted>
+    <Section>
       <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 items-start">
         <div>
           <Eyebrow>Request a demo</Eyebrow>
-          <h1 className="text-4xl font-bold text-ink-900">See it on your workflows</h1>
-          <p className="mt-4 text-ink-600">Tell us about your team and we'll tailor a walkthrough to your market and use case. A capital-markets specialist will be in touch within one business day.</p>
-          <ul className="mt-6 space-y-3">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08]"><span className="gradient-text">See it on your workflows</span></h1>
+          <p className="mt-5 text-lg text-muted">Tell us about your team and we'll tailor a walkthrough to your market and use case. A capital-markets specialist will be in touch within one business day.</p>
+          <ul className="mt-7 space-y-3">
             {['Tailored to your market segment','Live workflows, not slideware','No obligation'].map((t) => (
-              <li key={t} className="flex gap-3 text-ink-700"><span className="text-primary-600 font-bold">✓</span>{t}</li>
+              <li key={t} className="flex gap-3 text-muted items-center"><span className="text-cyan-400">✦</span>{t}</li>
             ))}
           </ul>
         </div>
